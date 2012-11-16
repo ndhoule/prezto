@@ -28,14 +28,18 @@ function set-screen-window-title {
 # Sets the terminal window title.
 function set-terminal-window-title {
   if [[ "$TERM" == ((x|a|ml|dt|E)term*|(u|)rxvt*) ]]; then
-    printf "\e]2;%s\a" ${(V)argv}
+    local prefix
+    zstyle -s ':prezto:module:terminal' window-title-prefix 'prefix'
+    printf "\e]2;%s%s\a" ${(V%)prefix} ${(V)argv}
   fi
 }
 
 # Sets the terminal tab title.
 function set-terminal-tab-title {
   if [[ "$TERM" == ((x|a|ml|dt|E)term*|(u|)rxvt*) ]]; then
-    printf "\e]1;%s\a" ${(V)argv}
+    local prefix
+    zstyle -s ':prezto:module:terminal' tab-title-prefix 'prefix'
+    printf "\e]1;%s%s\a" ${(V%)prefix} ${(V)argv}
   fi
 }
 

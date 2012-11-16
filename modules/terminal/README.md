@@ -13,6 +13,11 @@ directory, add the following to *zpreztorc*:
 
     zstyle ':prezto:module:terminal' auto-title 'yes'
 
+To prefix terminal window and tab titles, add the following to *zpreztorc*:
+
+    zstyle ':prezto:module:terminal' window-title-prefix '%n@%m: '
+    zstyle ':prezto:module:terminal' tab-title-prefix '%m: '
+
 Functions
 ---------
 

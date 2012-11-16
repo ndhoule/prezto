@@ -118,6 +118,12 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 # Auto set the tab and window titles.
 zstyle ':prezto:module:terminal' auto-title 'yes'
 
+# Set the window title prefix.
+zstyle ':prezto:module:terminal' window-title-prefix '%n@%m: '
+
+# Set the tab title prefix.
+zstyle ':prezto:module:terminal' tab-title-prefix '%m: '
+
 #
 # Tmux
 #
