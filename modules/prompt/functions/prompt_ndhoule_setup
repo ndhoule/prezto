@@ -86,7 +86,7 @@ function prompt_ndhoule_setup {
   zstyle ':prezto:module:python:info:virtualenv' format '(%v)'
 
   # Define prompts.
-  PROMPT="%B${_prompt_ndhoule_colors[5]}%n@%m%f ${_prompt_ndhoule_colors[3]}%2c%f%b "'${vcs_info_msg_0_}'" "'$python_info[virtualenv]'"» "
+  PROMPT="%B${_prompt_ndhoule_colors[5]}%n@%m%f ${_prompt_ndhoule_colors[3]}%2/%f%b "'${vcs_info_msg_0_}'" "'$python_info[virtualenv]'"» "
   RPROMPT=''
 }
 
